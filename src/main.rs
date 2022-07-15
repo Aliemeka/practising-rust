@@ -13,4 +13,13 @@ fn main() {
         "Unsigned: {}, signed: {}, floatNum: {}",
         unsigned_int, signed_int, float_num
     );
+
+    // If else statements
+    let n: i8 = 8;
+
+    if n > 2 {
+        println!("Good to go")
+    } else {
+        println!("Not good")
+    }
 }
