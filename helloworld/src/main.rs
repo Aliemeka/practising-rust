@@ -1,4 +1,16 @@
+/**
+ *
+ * Rust program
+ *
+ */
+
+fn print_hello() {
+    println!("Hello World!")
+}
+
 fn main() {
+    print_hello();
+
     let a: i32 = 2;
     let b: &str = "Something hooge";
     println!("{} {}", a, b);
