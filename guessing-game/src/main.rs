@@ -1,5 +1,3 @@
-use std::io;
-
 /**
  *
  * Guessing CLI game with Rustlang
@@ -11,6 +9,7 @@ use std::io;
  *
  */
 use rand::Rng;
+use std::io;
 
 fn get_guess() -> i16 {
     let mut user_guess = String::new();
