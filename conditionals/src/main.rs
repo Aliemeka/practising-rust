@@ -55,5 +55,5 @@ fn main() {
         "Group {}, {}",
         blood_group.trim(),
         analyze_blood_group(blood_group.trim())
-    )
+    );
 }
