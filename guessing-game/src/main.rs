@@ -24,7 +24,7 @@ fn get_guess() -> i16 {
 }
 
 fn get_diff(us_guess: i16, guess: i16) -> i16 {
-    return (us_guess - guess).abs();
+    (us_guess - guess).abs()
 }
 
 fn run_game() {
