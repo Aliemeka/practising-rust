@@ -7,6 +7,7 @@ fn main() {
     dome.print_name();
     dome.print_description();
     dome.print_no_of_members();
+    println!("{}", dome.can_build());
 }
 
 struct Dao {
@@ -24,5 +25,18 @@ impl Dao {
     }
     fn print_no_of_members(&self) {
         println!("Dao has {} members", self.no_of_members);
+    }
+}
+
+impl Group for Dao {
+    fn can_build(&self) -> bool {
+        true
+    }
+}
+
+trait Group {
+    fn can_build(&self) -> bool;
+    fn is_growing(&self) -> bool {
+        true
     }
 }
