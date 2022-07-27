@@ -3,15 +3,15 @@ fn main() {
     let b: Level = Level::Secondary(8);
     let c: Level = Level::Tertiary { x: 10, y: 30 };
 
-    println!("{:?}", a);
-    println!("{:?}", b);
-    println!("{:?}", c);
+    println!("{a:?}");
+    println!("{b:?}");
+    println!("{c:?}");
 
     if let Level::Secondary(val) = b {
-        println!("{}", val);
+        println!("{val}");
     }
     if let Level::Tertiary { x, y } = c {
-        println!("{},{}", x, y)
+        println!("{x},{y}")
     }
 }
 

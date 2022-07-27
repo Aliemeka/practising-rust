@@ -7,11 +7,11 @@ use std::io;
 // If else
 fn compare(num1: i16, num2: i16) {
     if num1 > num2 {
-        println!("{} is greater than {}&", num1, num2)
+        println!("{num1} is greater than {num2}")
     } else if num1 < num2 {
-        println!("{} is lesser than {}", num1, num2)
+        println!("{num1} is lesser than {num2}",)
     } else {
-        println!("{} is equal to {}", num1, num2)
+        println!("{num1} is equal to {num2}")
     }
 }
 
@@ -24,7 +24,7 @@ fn compare_with_tern(num1: i16, num2: i16) {
     } else {
         "is equal to"
     };
-    println!("{} {} {}", num1, response, num2);
+    println!("{num1} {response} {num2}");
 }
 
 fn analyze_blood_group(blood_group: &str) -> &str {

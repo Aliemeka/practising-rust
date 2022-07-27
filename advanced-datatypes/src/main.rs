@@ -39,4 +39,6 @@ fn main() {
     for (item, price) in &store_prices {
         println!("{item} is NGN {price}")
     }
+
+    println!("Store map: {store_prices:?}")
 }

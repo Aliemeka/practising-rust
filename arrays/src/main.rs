@@ -3,8 +3,8 @@ fn main() {
     let arr: [u32; 3] = [1, 2, 3];
     let o_arr: [u32; 5] = [16; 5];
 
-    println!("{:?}", arr);
-    println!("{:?}", o_arr);
+    println!("{arr:?}");
+    println!("{o_arr:?}");
 
     // Tuples
     let tuple_1: (i8, bool, &str) = (2, false, "Think");
@@ -21,7 +21,7 @@ fn main() {
     let main_arr: [u32; 5] = [1, 3, 4, 5, 6];
     let slice = &main_arr[1..3];
 
-    println!("Slice: {:?}", slice);
+    println!("Slice: {slice:?}");
 
     // Slice from string
 
@@ -29,5 +29,5 @@ fn main() {
 
     let slice_of_phrase = &phrase[..6];
 
-    println!("Slice of {} is {}", phrase, slice_of_phrase);
+    println!("Slice of {phrase} is {slice_of_phrase}");
 }
