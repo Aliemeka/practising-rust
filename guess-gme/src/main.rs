@@ -22,7 +22,7 @@ fn generate_rn() -> i16 {
 fn main() {
     let random_number = generate_rn();
     loop {
-        println!("Guess a number");
+        println!("Guess a number between 1 and 10");
         let guessed_number = get_guess();
         if random_number > guessed_number {
             println!("Number is too small")
