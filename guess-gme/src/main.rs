@@ -1,3 +1,4 @@
+use colored::*;
 use rand::Rng;
 use std::io;
 
@@ -25,11 +26,11 @@ fn main() {
         println!("Guess a number between 1 and 10");
         let guessed_number = get_guess();
         if random_number > guessed_number {
-            println!("Number is too small")
+            println!("{}", "Number is too small".red())
         } else if random_number < guessed_number {
-            println!("Number is too big")
+            println!("{}", "Number is too big".red())
         } else {
-            println!("You guessed it! {}", random_number);
+            println!("{} {}", "You guessed it!".green(), random_number);
             break;
         }
     }
