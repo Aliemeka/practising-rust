@@ -75,6 +75,10 @@ fn add_new_student(class_list: &mut Vec<Student>) {
     println!("{:?}", class_list);
 }
 
+fn get_student_count(class_list: &Vec<Student>) {
+    println!("They are {} in the class", class_list.len())
+}
+
 fn main() {
     let mut class_list: Vec<Student> = vec![];
 
@@ -82,10 +86,11 @@ fn main() {
 
     loop {
         println!("What action do you want to take?\n A - add student, B - get number of students, C - close");
-        let choice_input: Vec<char> = take_input().trim().chars().collect();
+        let choice_input: Vec<char> = take_input().trim().to_uppercase().chars().collect();
         let choice = choice_input[0];
         match choice {
             'A' => add_new_student(&mut class_list),
+            'B' => get_student_count(&class_list),
             'C' => {
                 println!("Thank you! Bye!");
                 break;
