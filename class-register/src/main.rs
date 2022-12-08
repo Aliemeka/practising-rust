@@ -71,8 +71,11 @@ fn add_new_student(class_list: &mut Vec<Student>) {
     let student = create_student();
 
     add_student_to_list(class_list, student);
+    println!("\nStudents in class:");
 
-    println!("{:?}", class_list);
+    for student in class_list.iter() {
+        println!("{}", student.name);
+    }
 }
 
 fn get_student_count(class_list: &Vec<Student>) {
