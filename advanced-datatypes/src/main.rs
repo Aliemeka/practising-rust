@@ -40,5 +40,11 @@ fn main() {
         println!("{item} is NGN {price}")
     }
 
-    println!("Store map: {store_prices:?}")
+    println!("Store map: {store_prices:?}");
+
+    // Tuples
+    let my_tuple: (u8, f32, i16) = (2, 3.4, -12);
+    let (first, second, third) = my_tuple;
+
+    println!("{first} {second} {third}");
 }
