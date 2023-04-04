@@ -1,9 +1,6 @@
 fn main() {
-    let dome = Dao {
-        name: String::from("Dome Academy"),
-        description: String::from("Platform of shared learning"),
-        no_of_members: 90,
-    };
+    let name = "Dome Academy";
+    let dome = Dao::new(name, "Platform of shared learning", 90);
     dome.print_name();
     dome.print_description();
     dome.print_no_of_members();
@@ -17,6 +14,13 @@ struct Dao {
 }
 
 impl Dao {
+    fn new(name: &str, description: &str, no_of_members: u128) -> Self {
+        Self {
+            name: String::from(name),
+            description: String::from(description),
+            no_of_members,
+        }
+    }
     fn print_name(&self) {
         println!("{}", self.name);
     }
