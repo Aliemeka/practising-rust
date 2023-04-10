@@ -5,6 +5,7 @@ fn main() {
     dome.print_description();
     dome.print_no_of_members();
     println!("{}", dome.can_build());
+    println!("{}", dome.is_growing());
 }
 
 struct Dao {
